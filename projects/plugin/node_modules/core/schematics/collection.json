@@ -1,0 +1,9 @@
+{
+    "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+        "ng-add": {
+            "description": "Core plugin that connects UC2 with other plugins",
+            "factory": "./ng-add/index#ngAdd"
+        }
+    }
+}

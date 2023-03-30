@@ -1,0 +1,22 @@
+{
+  "name": "core",
+  "version": "0.0.1",
+  "schematics": "./schematics/collection.json",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/collection.json ../../dist/core"
+  },
+  "peerDependencies": {
+    "@angular/common": "^14.2.0",
+    "@angular/core": "^14.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
+}
